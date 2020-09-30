@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+	<title>Game of [Paper,Scissors,Rock]</title>
+	<link rel="stylesheet" href="game.css">
+  <script language="javaScript" src="game.js"></script>
+ </head>
+
+ <body>
+  <h1></h1>
+ <table border="1">
+  <tr>
+    <th>Your Selection</th>
+    <th></th>
+    <th>Computer</th>
+  </tr>
+  <td>
+    <form name="youSelect">
+	    <input type="radio" name="Selection" value="Paper" id="Paper">Paper
+	    <br>
+	    <input type="radio" name="Selection" value="Scissors" id="Scissors">Scissors
+	    <br>
+	    <input type="radio" name="Selection" value="Rock" id="Rock">Rock
+    </form>
+  </td>
+  <td>
+    <form>
+     	<input type="button" value="Go!" onclick="play();"> 
+    </form>
+  </td>
+  <td><p id="play"></p></td>
+    </tr>
+    <tr>
+     <td>You Selected: </td>
+     <td colspan="2"><p id="youSelect"></p></td>
+    </tr>
+    <tr>
+     <td>Computer Randomly Generated: </td>
+     <td colspan="2"><p id="computerSelect"></p></td>
+ </table>
+    
+	<p>History: You have played total: <span id="history"></span> time(s)!<p>
+
+  <p>Paper: <span id="paperPlayed"></span>  time(s) 
+    & Scissors: <span id="scissorsPlayed"></span>  time(s)
+    & Rock: <span id="rockPlayed"></span>  time(s).</p>
+
+  <p>*----------<span id="answer"></span>---------*</p>
+ </body>
+</html>
